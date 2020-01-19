@@ -8,7 +8,7 @@ const extractText = async () => {
   await worker.load();
   await worker.loadLanguage('eng');
   await worker.initialize('eng');
-  const { data: { text } } = await worker.recognize('https://tesseract.projectnaptha.com/img/eng_bw.png');
+  const { data: { text } } = await worker.recognize('https://ios-photo-search.s3.amazonaws.com/test-photos/test.png');
   console.log(text);
   await worker.terminate();
 }
